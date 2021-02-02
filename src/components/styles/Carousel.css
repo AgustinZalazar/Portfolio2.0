@@ -1,0 +1,15 @@
+.rec.rec-arrow {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+}
+.rec.rec-arrow:hover{
+    background-color: rgb(37, 38, 41);
+}
+.rec.rec-dot{
+    background-color: rgb(37, 38, 41);
+    box-shadow: none;
+}
+.rec.rec-dot_active:hover{
+    box-shadow: white;
+}

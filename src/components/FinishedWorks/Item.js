@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-// import grupoafinidad from "../images/GAFINAL.png";
 
 const CardStyled = styled.article`
   width: 280px;
@@ -9,7 +8,8 @@ const CardStyled = styled.article`
   margin: 60px auto;
   box-shadow: 10px 5px 40px 20px darken(#341cac, 5%);
   transition: 0.25s;
-
+  background-color: #fff;
+  border-radius: 5px;
   &:hover {
     box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
     cursor: pointer;
@@ -32,6 +32,8 @@ const CardBodyStyled = styled.div`
   background-color: #fff;
   width: 100%;
   color: #10161a;
+  height: 200px;
+  border-radius: 8px;
 `;
 const BodyContent = styled.p`
   padding-bottom: 40px;
@@ -49,17 +51,19 @@ const Btn = styled.button`
   transition: 0.25s;
 `;
 
-function Card({  title, text,img, link }) {
+function Card({ title, text, img, link }) {
   return (
     <CardStyled>
-        <CardHeaderStyled style={{backgroundImage: `url(${img})`}} />
-        <CardBodyStyled>
-          <h2>{title}</h2>
-          <BodyContent>{text}</BodyContent>
-            <Btn>
-                <a href= { link }><i className="fa fa-chevron-right"></i> Ver mas</a>
-            </Btn>
-        </CardBodyStyled>
+      <CardHeaderStyled style={{ backgroundImage: `url(${img})` }} />
+      <CardBodyStyled>
+        <h2>{title}</h2>
+        <BodyContent>{text}</BodyContent>
+        <Btn>
+          <a href={link} target="blank">
+           Ver mas
+          </a>
+        </Btn>
+      </CardBodyStyled>
     </CardStyled>
   );
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import SgvIMG from "../images/Website-Creator-bro.png";
-import WaveSVG from '../images/wavepng.png'
+import SgvIMG from "../../images/Website-Creator-bro.png";
+import WaveSVG from '../../images/wavepng.png'
 import TextHero from "./TextHero";
 
 const HeroSection = styled.section`

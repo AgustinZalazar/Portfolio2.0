@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item.js";
-import WaveIMG from "../images/wave2.png";
-import { CardsData } from "../data/cards";
+import WaveIMG from "../../images/wave2.png";
+import { CardsData } from "../../data/cards";
+import '../styles/Carousel.css';
 
 const Container = styled.div`
   width: 100vw;
@@ -38,7 +39,7 @@ const Content = styled.div`
 
 function FinishedWorks() {
   return (
-    <Container>
+    <Container name="finishedworks">
       <Wave src={WaveIMG} />
       <Content>
         <Title>Trabajos Finalizados</Title>

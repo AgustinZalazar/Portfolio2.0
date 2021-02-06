@@ -15,6 +15,11 @@ const Content = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin: auto;
+  @media screen and (max-width: 768px) {
+    height:110px;
+    flex-direction: column;
+    margin: 0;
+  }
 `;
 
 const TextHedaer= styled.div`
@@ -25,9 +30,14 @@ const TextHedaer= styled.div`
   color: whitesmoke;
   font-size: 5em;
   font-weight: 600;
-  /* letter-spacing: -9px; */
   will-change: transform, opacity;
   overflow: hidden;
+  @media screen and (max-width: 600px) {
+    font-size: 2em;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 4em;
+  }
 `;
 function App() {
   return (

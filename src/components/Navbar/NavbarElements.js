@@ -8,10 +8,11 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   height: 100px;
-  z-index: 10;
-  position: sticky;
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
   top: 0;
-  background: #1c1d21;
+  background: #1C1D21;
   @media screen and (max-width: 768px) {
     transition: 0.8 all ease;
   }

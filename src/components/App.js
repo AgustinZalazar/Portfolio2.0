@@ -20,7 +20,7 @@ function App() {
       <Navbar toggle={toggle}/>
       <Hero />
       <AboutMe/>
-      <FinishedWorks/>
+      {/* <FinishedWorks/>  */}
     </>
   );
 }

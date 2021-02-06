@@ -9,7 +9,6 @@ import '../styles/Carousel.css';
 const Container = styled.div`
   width: 100vw;
   height: 700px;
-
   background-color: #8a8b8c;
   position: absolute;
 `;

@@ -37,7 +37,7 @@ const Content = styled.div`
   width: 100%;
   height: 100%;
   color: #fff;
-  padding: 50px 200px;
+  padding: 100px 200px;
   text-align: center;
   @media screen and (max-width: 768px) {
     padding: 25px 0px;

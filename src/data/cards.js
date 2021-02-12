@@ -3,6 +3,7 @@ import grupoafinidad from "../images/GAFINAL.png";
 import cesyt from "../images/CESYTFINAL.png";
 import uaionline from "../images/UAIONLINEFINAL.png";
 import hu from "../images/HOSPITALFINAL.png";
+import portfolio from '../images/portfolio.jpg'
 
 export const CardsData = [
   {
@@ -35,7 +36,7 @@ export const CardsData = [
     img: hu,
     link: "http://hospital_prueba.vaneduc.edu.ar/",
   },
-  { title: "", text: "", img: "", link: "" },
-  { title: "", text: "", img: "", link: "" },
-  { title: "", text: "", img: "", link: "" },
+  { title: "Portfolio", text: "Web hecha con ReactJS y styled components", img: portfolio, link: "/" },
+  // { title: "", text: "", img: "", link: "" },
+  // { title: "", text: "", img: "", link: "" },
 ];

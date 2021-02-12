@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #252629;
+  display: flex;
+  align-items: center;
 `;
 export const Content = styled.div`
   z-index: 10;

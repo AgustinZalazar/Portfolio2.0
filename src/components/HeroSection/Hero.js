@@ -34,7 +34,7 @@ const HeroContent = styled.div`
   width: 100%;
   color: #fff;
   padding: 200px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1350px) {
     flex-direction: column;
     padding: 0;
     align-content: center;
@@ -52,7 +52,7 @@ const HeaderImg = styled.img`
     height: 250px;
     margin-top: 20px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px ) and (max-width : 1600px) {
     width: 400px;
     height: 400px;
     margin-top: 20px;

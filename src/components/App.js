@@ -1,4 +1,3 @@
-import "./styles/App.css";
 import React, { useState } from "react";
 import Navbar from "./Navbar/Navbar";
 import GlobalStyle from "../GlobalStyles";
@@ -6,6 +5,8 @@ import { Hero } from "./HeroSection/Hero";
 import AboutMe from "./Aboutme/AboutMe";
 import FinishedWorks from "./FinishedWorks/FinishedWorks";
 import Sidebar from "./Sidebar/Sidebar";
+import Technologies from "./Technologies/Technologies";
+import Contact from './Contact/Contact'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,9 @@ function App() {
       <Navbar toggle={toggle}/>
       <Hero />
       <AboutMe/>
-      {/* <FinishedWorks/>  */}
+      <FinishedWorks/> 
+      <Technologies/>
+      <Contact />
     </>
   );
 }

@@ -84,6 +84,6 @@ export const NavMenuLink = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #DDA950;
+    border-bottom: 2px solid #DDA950;
   }
 `;

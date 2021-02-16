@@ -6,12 +6,13 @@ import {
   Title,
   Inputs,
   Form,
-  Error,
   Label,
   TextArea,
   InputButton,
+  Wave
 } from "./ContactElements";
-import { useForm } from "react-cool-form";
+// import { useForm } from "react-cool-form";
+import WaveContact from "../../images/wave_contact.png";
 
 function Contact() {
   // const { form, getState } = useForm({
@@ -56,6 +57,7 @@ function Contact() {
           </div>
           <InputButton type="submit"  value="Send"/>
         </Form>
+        <Wave src={ WaveContact } />
       </ContentContact>
     </ContainerContact>
   );

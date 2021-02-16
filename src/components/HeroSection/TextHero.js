@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
-import TextScramble from '@twistezo/react-text-scramble'
+import TextScramble from "@twistezo/react-text-scramble";
 
-const scrambleTexts = [
-  'Frontend Dev 💻'
-]
+const scrambleTexts = ["Frontend Dev 💻"];
 
 const Content = styled.div`
   position: relative;
@@ -16,13 +14,13 @@ const Content = styled.div`
   align-items: center;
   margin: auto;
   @media screen and (max-width: 768px) {
-    height:110px;
+    height: 110px;
     flex-direction: column;
     margin: 0;
   }
 `;
 
-const TextHedaer= styled.div`
+const TextHedaer = styled.div`
   position: relative;
   width: 100%;
   height: 110px;
@@ -41,15 +39,16 @@ const TextHedaer= styled.div`
 `;
 function App() {
   return (
-      <Content>
-        <TextHedaer>
-          <TextScramble
-            texts={scrambleTexts}
-            letterSpeed={5}
-            nextLetterSpeed={100}
-            pauseTime={1500}
-          /></TextHedaer>
-    </Content>    
+    <Content>
+      <TextHedaer>
+        <TextScramble
+          texts={scrambleTexts}
+          letterSpeed={5}
+          nextLetterSpeed={100}
+          pauseTime={1500}
+        />
+      </TextHedaer>
+    </Content>
   );
 }
 

@@ -2,10 +2,18 @@ import styled from "styled-components";
 
 export const ContainerContact = styled.div`
   width: 100vw;
-  height: 700px;
+  min-height: 100vh;
   background-color: #8a8b8c;
+  position: relative;
 `;
-
+export const Wave = styled.img`
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  z-index: 1;
+`;
 export const Title = styled.h2`
   font-size: 35px;
   text-decoration: underline;

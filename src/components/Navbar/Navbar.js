@@ -14,9 +14,9 @@ import {
 import LogoBlanco from "../../images/Logo(Blanco).png";
 //import LogoMostaza from "../../images/Logo(Mostaza).png";
 
-const Navbar = ({toggle}) => {
+const Navbar = ({ toggle }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
-  
+
   return (
     <Nav>
       <NavbarContainer>
@@ -26,16 +26,49 @@ const Navbar = ({toggle}) => {
         <MenuBars onClick={toggle} />
         <NavMenu>
           <NavItem>
-            <NavMenuLink to="/">Home</NavMenuLink>
+            <NavMenuLink
+              spy={true}
+              activeClass="active"
+              to="home"
+              smooth={true}
+              
+              duration={500}
+            >
+              Home
+            </NavMenuLink>
           </NavItem>
           <NavItem>
-            <NavMenuLink to='about' smooth={true} offset={50} duration={500}>About me</NavMenuLink>
+            <NavMenuLink
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              About me
+            </NavMenuLink>
           </NavItem>
           <NavItem>
-            <NavMenuLink to='finishedworks' smooth={true} offset={50} duration={500}>Finished Works</NavMenuLink>
+            <NavMenuLink
+              spy={true}
+              activeClass="active"
+              to="finishedworks"
+              smooth={true}
+              duration={500}
+            >
+              Finished Works
+            </NavMenuLink>
           </NavItem>
           <NavItem>
-            <NavMenuLink to='Contact' smooth={true} offset={50} duration={500}>Contact</NavMenuLink>
+            <NavMenuLink
+              spy={true}
+              activeClass="active"
+              to="Contact"
+              smooth={true}
+              duration={500}
+            >
+              Contact
+            </NavMenuLink>
           </NavItem>
         </NavMenu>
         <NavMenu>

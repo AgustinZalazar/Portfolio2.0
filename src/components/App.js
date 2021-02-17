@@ -10,6 +10,7 @@ import Contact from "./Contact/Contact";
 import LoadingComp from "../components/Loading/Loading";
 import './styles/app.css';
 import Footer from "./Footer/Footer";
+// import { Scrollbars } from 'react-custom-scrollbars';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2500);
   }, []);
 
   const toggle = () => {
@@ -30,7 +31,7 @@ function App() {
       {loading ? (
         <LoadingComp />
       ) : (
-        <>
+          <>
           <GlobalStyle />
           <Sidebar toggle={toggle} isOpen={isOpen} />
           <Navbar toggle={toggle} />
@@ -40,7 +41,7 @@ function App() {
           <Technologies />
           <Contact />
           <Footer/>
-        </>
+          </>
       )}
     </>
   );

@@ -32,9 +32,9 @@ const Navbar = ({ toggle }) => {
               to="home"
               smooth={true}
               
-              duration={500}
+              duration={1000}
             >
-              Home
+              Inicio
             </NavMenuLink>
           </NavItem>
           <NavItem>
@@ -43,9 +43,9 @@ const Navbar = ({ toggle }) => {
               to="about"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={1000}
             >
-              About me
+              Sobre mi
             </NavMenuLink>
           </NavItem>
           <NavItem>
@@ -54,9 +54,9 @@ const Navbar = ({ toggle }) => {
               activeClass="active"
               to="finishedworks"
               smooth={true}
-              duration={500}
+              duration={1000}
             >
-              Finished Works
+              Trabajos finalizados
             </NavMenuLink>
           </NavItem>
           <NavItem>
@@ -65,9 +65,9 @@ const Navbar = ({ toggle }) => {
               activeClass="active"
               to="Contact"
               smooth={true}
-              duration={500}
+              duration={1000}
             >
-              Contact
+              Contacto
             </NavMenuLink>
           </NavItem>
         </NavMenu>

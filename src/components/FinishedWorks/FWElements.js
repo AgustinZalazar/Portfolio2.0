@@ -12,13 +12,9 @@ export const Wave = styled.img`
   position: absolute;
   bottom: 0px;
   left: 0;
-  width: 100%;
-  height: 450px;
+  width: 100vw;
   z-index: 1;
   background-color: #8a8b8c;
-  @media screen and (max-width: 768px) {
-    height: 300px;
-  }
 `;
 export const Title = styled.h2`
   font-size: 35px;

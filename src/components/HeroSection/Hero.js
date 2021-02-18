@@ -1,10 +1,10 @@
 import React from "react";
-import {HeroSection, HeroIMG, HeroContent, Wave} from './HeroElements'
+import {HeroSection, HeroIMG, HeroContent, Wave, HeaderImg} from './HeroElements'
 
 // import SgvIMG from "../../images/Website-Creator-bro.png";
 import WaveSVG from "../../images/wavepng.png";
 import HeaderAnimation from '../../assets/lotties/header_animation.json'
-import Lottie from 'react-lottie'
+
 import TextHero from "./TextHero";  
 
 const defaultOptions = {
@@ -20,8 +20,7 @@ export const Hero = () => {
       <HeroIMG>
         <HeroContent>
           <TextHero />
-          {/* <HeaderImg src={SgvIMG} /> */}
-          <Lottie options={defaultOptions}/>
+          <HeaderImg options={defaultOptions}/>
         </HeroContent>
         <Wave src={WaveSVG} />
       </HeroIMG>

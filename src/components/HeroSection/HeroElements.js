@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import Lottie from 'react-lottie'
 
 export const HeroSection = styled.section`
   height: 100vh;
@@ -38,7 +39,7 @@ export const HeroContent = styled.div`
   }
 `;
 
-export const HeaderImg = styled.img`
+export const HeaderImg = styled(Lottie)`
   width: 600px;
   height: 600px;
   z-index: 5;

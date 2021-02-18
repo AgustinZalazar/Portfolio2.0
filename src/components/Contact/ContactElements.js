@@ -10,8 +10,7 @@ export const Wave = styled.img`
   position: absolute;
   bottom: 0px;
   left: 0;
-  width: 100%;
-  height: 450px;
+  width: 100vw;
   z-index: 1;
 `;
 export const Title = styled.h2`

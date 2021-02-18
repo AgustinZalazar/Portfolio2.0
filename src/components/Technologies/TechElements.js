@@ -4,6 +4,9 @@ export const Container = styled.div`
   width: 100vw;
   height: 500px;
   background-color: #8a8b8c;
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+  }
 `;
 
 export const Title = styled.h2`
@@ -30,12 +33,21 @@ export const TechContainer = styled.div`
   align-content: center;
   justify-content: space-between;
   padding-top: 80px;
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+    flex-direction: column;
+  }
 `;
 export const Tech = styled.div`
   display: flex;
   width: 60px;
   height: 60px;
   flex-direction: column;
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+  }
 `;
 export const TechImg = styled.img`
   width: 60px;

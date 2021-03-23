@@ -60,7 +60,7 @@ function Contact() {
             <Label>Mensaje</Label>
             <TextArea name="message" type="text" required />
           </div>
-          <InputButton type="submit"  value="Send" data-aos="fade-right" />
+          <InputButton type="submit"  value="Enviar" data-aos="fade-right" />
         </Form>
         <Wave src={ WaveContact } />
       </ContentContact>

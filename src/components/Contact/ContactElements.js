@@ -44,6 +44,10 @@ export const Form = styled.form`
   margin: 3rem auto 0;
   width: 35rem;
   text-align: left;
+  @media screen and (max-width: 768px) {
+    width:100%;
+    padding: 10px;
+  }
 `;
 export const Error = styled.p`
   margin-top: 0.5rem;

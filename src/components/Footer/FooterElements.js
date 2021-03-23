@@ -5,7 +5,7 @@ import { FiInstagram } from "react-icons/fi";
 
 export const Container = styled.div`
   width: 100vw;
-  height: 400px;
+  height: 410px;
   background-color: #1c1d21;
 `;
 
@@ -31,6 +31,11 @@ export const PreFooter = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 `;
 export const Copyright = styled.div`
   text-align: center;
@@ -91,4 +96,7 @@ export const IconLink = styled.a`
   color: #fff;
   display: flex;
   justify-content: flex-end;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;

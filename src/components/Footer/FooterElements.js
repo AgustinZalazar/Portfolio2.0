@@ -89,4 +89,6 @@ export const IconInstragram = styled(FiInstagram)`
 `;
 export const IconLink = styled.a`
   color: #fff;
+  display: flex;
+  justify-content: flex-end;
 `;

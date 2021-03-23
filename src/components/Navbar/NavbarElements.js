@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   position: fixed;
   width: 100%;
   top: 0;
-  background: #1C1D21;
+  background: #1c1d21;
   @media screen and (max-width: 768px) {
     transition: 0.8 all ease;
   }
@@ -84,6 +84,9 @@ export const NavMenuLink = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 2px solid #DDA950;
+    border-bottom: 2px solid #dda950;
   }
 `;
+
+
+

@@ -10,8 +10,8 @@ import {
   NavMenu,
   NavItem,
 } from "./NavbarElements";
-
 import LogoBlanco from "../../images/Logo(Blanco).png";
+//import { DropdownLanguages } from "../Dropdown/Dropdown";
 //import LogoMostaza from "../../images/Logo(Mostaza).png";
 
 const Navbar = ({ toggle }) => {
@@ -31,7 +31,6 @@ const Navbar = ({ toggle }) => {
               activeClass="active"
               to="home"
               smooth={true}
-              
               duration={1000}
             >
               Inicio
@@ -72,6 +71,7 @@ const Navbar = ({ toggle }) => {
           </NavItem>
         </NavMenu>
         <NavMenu>
+          {/* <DropdownLanguages/> */}
           <DarkModeToggle
             onChange={setIsDarkMode}
             checked={isDarkMode}

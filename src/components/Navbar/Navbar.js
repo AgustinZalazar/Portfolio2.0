@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import DarkModeToggle from "react-dark-mode-toggle";
+import React from "react";
+// import DarkModeToggle from "react-dark-mode-toggle";
 import {
   Nav,
   NavbarContainer,
@@ -15,7 +15,7 @@ import LogoBlanco from "../../images/Logo(Blanco).png";
 //import LogoMostaza from "../../images/Logo(Mostaza).png";
 
 const Navbar = ({ toggle }) => {
-  const [isDarkMode, setIsDarkMode] = useState(() => false);
+  // const [isDarkMode, setIsDarkMode] = useState(() => false);
 
   return (
     <Nav>
@@ -72,11 +72,11 @@ const Navbar = ({ toggle }) => {
         </NavMenu>
         <NavMenu>
           {/* <DropdownLanguages/> */}
-          <DarkModeToggle
+          {/* <DarkModeToggle
             onChange={setIsDarkMode}
             checked={isDarkMode}
             size={50}
-          />
+          /> */}
         </NavMenu>
       </NavbarContainer>
     </Nav>

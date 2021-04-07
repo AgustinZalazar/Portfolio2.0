@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Wave, Content, Title } from "./FWElements";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item.js";
 import WaveIMG from "../../images/wave2.png";
-import { CardsData } from "../../data/cards";
+import sanityClient from "../../data/Client";
 import "../styles/Carousel.css";
 
 function FinishedWorks() {
+  const [postData, setPost] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "project"]{
+          title,
+          descripcion,
+          url,
+          mainImage{
+            asset->{
+            _id,
+            url
+          }
+        }
+      }`
+      )
+      .then((data) => setPost(data))
+      .catch(console.error);
+  }, []);
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
@@ -21,15 +41,16 @@ function FinishedWorks() {
       <Content>
         <Title>Trabajos Finalizados</Title>
         <Carousel breakPoints={breakPoints}>
-          {CardsData.map((web, index) => (
-            <Item
-              key={index}
-              title={web.title}
-              text={web.text}
-              img={web.img}
-              link={web.link}
-            />
-          ))}
+          {postData &&
+            postData.map((post, index) => (
+              <Item
+                key={index}
+                title={post.title}
+                link={post.url}
+                img={post.mainImage.asset.url}
+                text={post.descripcion} 
+              />
+            ))}
         </Carousel>
       </Content>
     </Container>

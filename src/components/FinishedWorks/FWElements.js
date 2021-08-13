@@ -1,12 +1,13 @@
 import styled from "styled-components";
-
+import WaveIMG from "../../images/wave2.png";
 //Finished Works Layout
 
 export const Container = styled.div`
-  width: 100vw;
-  min-height: 100vh;
-  background-color: #252629;
-  position: relative;
+  width: 100%;
+  background-color: rgb(138, 139, 140);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(${WaveIMG});
 `;
 export const Wave = styled.img`
   position: absolute;
@@ -23,7 +24,7 @@ export const Title = styled.h2`
   text-decoration-color: #dda950;
 `;
 export const Content = styled.div`
-  position: absolute;
+  /* position: absolute; */
   z-index: 10;
   width: 100%;
   height: 100%;
@@ -36,36 +37,48 @@ export const Content = styled.div`
 `;
 
 // Cards
+
+export const Cards = styled.div`
+  display: grid;
+  width: 100%;
+  margin-top: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-row-gap: 60px;
+  @media screen and (max-width: 768px) {
+    grid-gap: 40px;
+  }
+`;
+
 export const CardStyled = styled.article`
-  width: 280px;
+  width: 300px;
   display: block;
-  margin: 60px auto;
   box-shadow: 10px 5px 40px 20px darken(#341cac, 5%);
   transition: 0.25s;
-  background-color: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1c1d21;
+  justify-self: center;
   &:hover {
     box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
     cursor: pointer;
-
+    transform: translate(8px, -8px);
     .button-primary {
       transform: translate(10px, 0);
     }
   }
 `;
-export const CardHeaderStyled = styled.header`
-  height: 150px;
+
+export const CardHeaderStyled = styled.img`
+  height: 200px;
   width: 100%;
-  padding: 15px;
-  width: 100%;
-  background-size: cover;
-  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 `;
 export const CardBodyStyled = styled.div`
   padding: 15px;
-  background-color: #fff;
+  background-color: #1c1d21;
   width: 100%;
-  color: #10161a;
+  color: #FFF;
   height: 200px;
   border-radius: 8px;
 `;
@@ -79,8 +92,11 @@ export const Btn = styled.button`
   border: none;
   box-shadow: none;
   font-family: inherit;
-  background-color: transparent;
-  color: #dda950;
+  background-color: #dda950;
+  color: #fff;
   font-size: 15px;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
+  border-radius: 5px;
+  padding: 5px 20px;
 `;

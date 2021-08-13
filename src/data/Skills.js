@@ -19,7 +19,7 @@ export const SkillsData = [
         svg: bootstrap
     },
     {
-        name: 'JS',
+        name: 'JavaScript',
         svg: js
     },
     {

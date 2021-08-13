@@ -28,33 +28,38 @@ export const Content = styled.div`
 `;
 export const TechContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 80px;
+  gap: 60px;
   @media screen and (max-width: 768px) {
     padding-top: 50px;
-    flex-direction: column;
   }
 `;
 export const Tech = styled.div`
   display: flex;
-  width: 60px;
-  height: 60px;
-  flex-direction: column;
+  width: auto;
+  height: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #252629;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 10px;
   @media screen and (max-width: 768px) {
-    width: 100px;
-    height: 100px;
     align-items: center;
   }
 `;
 export const TechImg = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
 `;
 
 export const TechName = styled.h4`
   font-weight: 300;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 `;
